@@ -15,6 +15,13 @@ const distanza = Number(prompt('Inserire i Km di viaggio'))
 
 //Calcolo del prezzo di base (0.21 € al km)
 
+const PrezzoPerKm = 0.21
+
+const PrezzoBase = PrezzoPerKm * distanza
+console.log(PrezzoBase);
+    
+
+
 //Applicazione sconto minorenni
 
 //Applicazione sconto over 65
