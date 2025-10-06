@@ -22,9 +22,19 @@ console.log(PrezzoBase);
     
 //Applicazione sconto minorenni
 
-const ScontoMinorenni = PrezzoBase - (0.2 * PrezzoBase)
-console.log(ScontoMinorenni);
+const ScontoMinorenni = 0.2 * PrezzoBase
 
 //Applicazione sconto over 65
 
+const ScontoOver65 = 0.4 * PrezzoBase
+
+
 //Output prezzo finale in forma umana
+
+if (eta < 18) {
+    const PrezzoFinaleUnder = PrezzoBase - ScontoMinorenni
+    console.log(PrezzoFinaleUnder.toFixed(2));
+} else if (eta > 65) {
+    const PrezzoFinaleOver = PrezzoBase - ScontoOver65
+    console.log(PrezzoFinaleOver.toFixed(2));
+}
