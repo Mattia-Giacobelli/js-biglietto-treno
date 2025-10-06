@@ -20,9 +20,10 @@ const PrezzoPerKm = 0.21
 const PrezzoBase = PrezzoPerKm * distanza
 console.log(PrezzoBase);
     
-
-
 //Applicazione sconto minorenni
+
+const ScontoMinorenni = PrezzoBase - (0.2 * PrezzoBase)
+console.log(ScontoMinorenni);
 
 //Applicazione sconto over 65
 
